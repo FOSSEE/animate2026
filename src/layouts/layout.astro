@@ -1,0 +1,257 @@
+---
+import navLinks from "./nav-links.json";
+import { slide } from 'astro:transitions';
+import logo from '../images/logo-2026.png';
+import fos from '../images/fossee-logo.png';
+import iit from '../images/IITB-logo.png';
+import calender from '../images/date-icon.png';
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+	 <meta name="description" content="ANIMATE 2026 by FOSSEE">
+   <meta name="author" content="FOSSEE web team">
+   <meta name="keywords" content="ANIMATE 2026, Animation Hackathon, Hackathon,  competition,  Animation, Open Source">
+   <meta name="keywords"
+      content="Focal, Open source, software">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <div class="relative min-h-screen bg-white"> -->
+  <div class="relative min-h-screen bg-[#dde9af] lg:bg-white">
+  <!-- Left Sidebar Container (Off-canvas Drawer on Mobile / Fixed Sidebar on Desktop) -->
+  <aside
+    id="sidebar"
+    class="fixed inset-y-0 left-0 z-40 w-full sm:w-[25rem] flex-col justify-between bg-[#dde9af] py-6 px-6 transition-transform duration-300 ease-in-out -translate-x-full lg:translate-x-0 lg:flex"
+  >  
+    <div class="flex flex-col items-center">
+      
+      <!-- Close Button for Mobile Drawer -->
+      <div class="flex w-full justify-end lg:hidden">
+        <button
+          id="close-sidebar-btn"
+          type="button"
+          class="rounded-md p-2 text-[#800000ff] hover:bg-[#c9d897] focus:outline-none"
+          aria-label="Close Sidebar"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Header Logos -->
+      <div class="flex w-full items-center justify-between rounded-lg  px-4 py-3">
+        <a href="https://www.iitb.ac.in/" target="_blank" rel="noopener noreferrer">
+          <img src={iit.src} alt="IIT Bombay Logo" decoding="async" style="width: 170px;" class="object-contain" />
+        </a>
+        <a href="https://fossee.in" target="_blank" rel="noopener noreferrer">
+          <img src={fos.src} alt="FOSSEE Logo" decoding="async" style="width: 170px;" class="object-contain" />
+        </a>
+      </div>
+
+      <!-- Sidebar Heading -->
+      <div class="mt-6 text-center text-[#800000ff]">
+        <h2 class="text-2xl font-bold uppercase tracking-wide">FOSSEE, IIT BOMBAY</h2>
+        <p class="text-xl font-semibold italic">Presents</p>
+      </div>
+
+      <!-- ANIMATE Logo -->
+      <div class="mt-6 flex justify-center">
+        <img src={logo.src} style="width: 85%;" alt="ANIMATE 2026" decoding="async" />
+      </div>
+
+      <!-- Registration Dates with Calendar Icon -->
+      <div class="mt-12 flex flex-col items-center gap-3">
+        <img src={calender.src} alt="Calendar Icon" decoding="async" class="h-14 w-14 object-contain" />
+        
+        <div class="text-center text-xl font-medium text-[#800000ff] space-y-1">
+         <p>Registration start date: <strong class="text-[#800000ff]">15 Sept 2026</strong></p>
+
+          <p>Registration end date: <strong class="text-[#800000ff]">10 Oct 2026</strong></p>
+          <p> Submission end date: <strong class="text-[#800000ff]">31 Oct 2026</strong></p>
+        </div>
+      </div>
+
+      <!-- Call To Action -->
+<!-- Responsive Solid Register Button -->
+<!-- Register Button -->
+      <div class="mt-6 flex justify-center w-full px-4">
+        <a 
+          href="/register" 
+          class="inline-flex items-center justify-center w-full sm:w-auto rounded-md bg-[#38a169] px-8 py-2.5 text-xl font-bold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#2f855a] active:scale-95"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+    </aside>
+
+  <!-- Dark Overlay for Mobile Sidebar -->
+  <div 
+    id="sidebar-overlay" 
+    class="fixed inset-0 z-30 hidden bg-black/50 transition-opacity lg:hidden"
+  ></div>
+
+  <!-- Main Content Wrapper -->
+  <div class="pl-0 lg:pl-[25rem]">
+    
+    <!-- Top Horizontal Navigation Bar (Preserved #e2e0f4 Background) -->
+    <header class="sticky top-0 z-20 w-full bg-[#e2e0f4] shadow-sm">
+      <div class="mx-auto max-w-7xl px-4 py-4 md:py-7">
+        
+        <!-- Mobile Navigation Header -->
+        <div class="flex items-center justify-between md:hidden">
+          
+          <!-- Toggle Sidebar Info Drawer -->
+          <button 
+            id="mobile-sidebar-toggle-btn"
+            type="button" 
+            class="rounded-md p-2 text-[#800000ff] hover:bg-[#d0ccf0] focus:outline-none"
+            aria-label="Open Sidebar Info"
+          >
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+
+          <span class="font-bold text-[#800000ff]">ANIMATE 2026</span>
+
+          <!-- Toggle Navigation Links -->
+          <button 
+            id="mobile-menu-btn"
+            type="button" 
+            class="rounded-md p-2 text-[#800000ff] hover:bg-[#d0ccf0] focus:outline-none"
+            aria-label="Toggle Navigation"
+          >
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links Container (Desktop) -->
+        <nav id="main-navigation" class="hidden md:flex md:items-center md:justify-center">
+          <ul class="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
+            {
+              navLinks.map((link) => {
+                const { label, href } = link;
+                return (
+                  <li>
+                    <a
+                      href={href}
+                      class="nav-link relative px-3 py-1.5 text-base text-xl font-semibold text-[#800000ff] underline underline-offset-4 transition-colors hover:text-[#5a0000]"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </nav>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <nav id="mobile-navigation" class="hidden pt-3 md:hidden">
+          <ul class="flex flex-col gap-2 pb-2">
+            {
+              navLinks.map((link) => {
+                const { label, href } = link;
+                return (
+                  <li>
+                    <a
+                      href={href}
+                      class="nav-link block rounded-md px-3 py-2 text-base font-semibold text-[#800000ff] hover:bg-[#d0ccf0]"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Page Content Slot -->
+    <main class="p-6 md:p-10" transition:animate={slide({ duration: '0.4s' })}>
+      <slot />
+    </main>
+  </div>
+
+</div>
+
+<!-- Active Tab Styling & Router Logic -->
+<style>
+  .nav-link.active {
+    background-color: #cbbece !important;
+    color: #800000ff !important;
+    font-weight: 700 !important;
+    border-radius: 4px;
+    text-decoration: underline !important;
+  }
+</style>
+
+<script>
+  function handleActiveNav() {
+    const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+    const currentHash = window.location.hash;
+    const fullUrl = currentPath + currentHash;
+
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href === fullUrl || href === currentPath) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  function setupMobileMenu() {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-navigation');
+    const sidebarToggleBtn = document.getElementById('mobile-sidebar-toggle-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+
+    // Toggle Mobile Navigation Links
+    if (menuBtn && mobileNav) {
+      menuBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+
+    // Toggle Sidebar Drawer on Mobile
+    function openSidebar() {
+      if (sidebar && overlay) {
+        sidebar.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+      }
+    }
+
+    function closeSidebar() {
+      if (sidebar && overlay) {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    }
+
+    if (sidebarToggleBtn) sidebarToggleBtn.addEventListener('click', openSidebar);
+    if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebar);
+    if (overlay) overlay.addEventListener('click', closeSidebar);
+  }
+
+  document.addEventListener('astro:page-load', () => {
+    handleActiveNav();
+    setupMobileMenu();
+  });
+</script>

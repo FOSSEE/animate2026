@@ -1,0 +1,11 @@
+[
+ 
+  { "label": "About", "href": "/about" },
+  { "label": "Eligibility", "href": "/eligibility" },
+    { "label": "Theme", "href": "/theme" },
+  { "label": "Submission", "href": "/submissions" },
+  { "label": "Rules and Regulations", "href": "/rules" },
+  {"label": "Partners", "href": "/partners"},
+  { "label": "Contact", "href": "/contact" }
+
+]

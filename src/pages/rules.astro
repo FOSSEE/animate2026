@@ -1,0 +1,332 @@
+---
+import Main from '../layouts/main.astro';
+---
+
+<Main>
+  <section id="rules" class="bg-white py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      
+      <!-- Section Header -->
+      <div class="mb-8 text-center">
+        <h2 class="text-3xl font-bold text-center text-[#800000ff] mb-2">
+          Important Rules & Submission Guidelines
+        </h2>
+        <p class="mt-2 text-xl text-gray-600">
+          ANIMATE 2026 — AI & Software Usage Policy
+        </p>
+      </div>
+
+      <!-- Tab Buttons Navigation -->
+      <div class="mb-8 flex flex-wrap justify-center gap-2 border-b border-gray-200 pb-4">
+        <button
+          class="tab-btn active-tab rounded-lg px-5 py-2.5 text-xl font-semibold transition-all"
+          data-tab="tab-1"
+        >
+          Rules & Regulations
+        </button>
+        <button
+          class="tab-btn inactive-tab rounded-lg px-5 py-2.5 text-xl font-semibold transition-all"
+          data-tab="tab-2"
+        >
+          AI Usage Policy
+        </button>
+        <button
+          class="tab-btn inactive-tab rounded-lg px-5 py-2.5 text-xl font-semibold transition-all"
+          data-tab="tab-3"
+        >
+          Open Source Software Policy
+        </button>
+        <button
+          class="tab-btn inactive-tab rounded-lg px-5 py-2.5 text-xl font-semibold transition-all"
+          data-tab="tab-4"
+        >
+          Resources
+        </button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="rounded-xl text-xl border border-green-300 bg-white p-6 shadow-sm md:p-8">
+        
+        <!-- Tab 1: Rules & Regulations (Default Open) -->
+        <div id="tab-1" class="tab-content block space-y-4 text-gray-700">
+          <h2 class="text-2xl font-bold text-[#800000ff]">1. General Rules</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>A participant may register and participate in only one team. If a participant is found participating in more than one team, all teams involved will be disqualified.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Each team must nominate one Team Lead, who will be the sole point of contact with the organizers.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Any form of malpractice, plagiarism, misrepresentation, or violation of the hackathon rules will result in immediate disqualification.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Participants must submit original work created specifically for ANIMATE 2026. Previously submitted or copyrighted work may not be submitted without appropriate permission.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Participants may narrate their animation in English or any of the 22 scheduled Indian languages: Assamese, Bengali, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Sindhi, Tamil, Telugu, Urdu, Bodo, Santhali, Maithili, and Dogri.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>The decision of the Review Committee and Organizers regarding eligibility, evaluation, disqualification, and final results shall be final.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Submission of an entry constitutes acceptance of these rules and regulations.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab 2: AI Usage Policy -->
+        <div id="tab-2" class="tab-content hidden space-y-4 text-gray-700">
+          <h2 class="text-2xl font-bold text-[#800000ff]">AI Usage Policy</h2>
+          <p class="font-semibold text-gray-900 italic">"AI may assist. Humans must create."</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>AI tools may be used for story development, brainstorming, scripting, research, translation, planning, concept art, voice, or minor texture generation.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>AI may be used as a creative assistant, but it must not create the complete final animation. Core animation, rigging, and storytelling must be manually created.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>AI-generated video or complete AI-generated animation may not be submitted as the final work.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>The actual animation must be created by the participant using Synfig Studio for 2D animation and/or Blender for 2D/3D animation.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Participants must disclose any AI tools used and explain their purpose in the AI Usage Declaration submitted with the project form.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="font-bold text-[#800000ff]">•</span>
+              <span>Failure to disclose significant AI use or submitting substantially AI-generated animation as participant-created work may result in disqualification.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab 3: Open Source Software Policy -->
+        <div id="tab-3" class="tab-content hidden space-y-4 text-gray-700">
+          <h2 class="text-2xl font-bold text-[#800000ff]">Open Source Software Policy</h2>
+
+          <p>
+            Only Free and Open Source Software (FOSS) may be used to create the animation and its supporting content.
+          </p>
+
+          <div class="grid gap-4 md:grid-cols-2 my-4">
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="font-semibold text-gray-900 mb-2">Primary Software</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>
+                  <a href="https://www.synfig.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Synfig Studio</a>
+                  (2D Animation)
+                </li>
+                <li>
+                  <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Blender</a>
+                  (3D &amp; 2D Animation, Compositing)
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="font-semibold text-gray-900 mb-2">Supporting Tools</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>
+                  <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Inkscape</a>
+                  — Vector graphics
+                </li>
+                <li>
+                  <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">GIMP</a>
+                  — Image editing
+                </li>
+                <li>
+                  <a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Audacity</a>
+                  — Audio editing
+                </li>
+                <li>
+                  <a href="https://www.openshot.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">OpenShot Video Editor</a>
+                  — Video editing
+                </li>
+                <li>
+                  <a href="https://www.scribus.net/downloads/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Scribus</a>
+                  — Layout &amp; documentation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="space-y-3 pt-2">
+            <li class="flex items-start gap-3">
+              <span class="text-[#800000ff]">•</span>
+              <span>Participants must not use proprietary software for any part of the creative production workflow.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#800000ff]">•</span>
+              <span>Use of proprietary software where it materially contributes to the submitted work may result in disqualification.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#800000ff]">•</span>
+              <span>Participants should provide source/project files to verify the software and production workflow.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab 4: Resources -->
+        <div id="tab-4" class="tab-content hidden space-y-4 text-gray-700">
+          <h2 class="text-2xl font-bold text-[#800000ff]">Helpful Resources</h2>
+          <p>
+            The following resources will help you learn the required open-source software and prepare your submission for <strong>ANIMATE 2026</strong>.
+          </p>
+
+          <!-- Resource Cards Grid -->
+          <div class="grid gap-4 md:grid-cols-2 my-4">
+            
+            <!-- Spoken Tutorials -->
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="mb-2 font-semibold text-gray-900">🎓 Spoken Tutorials</h3>
+              <p class="mb-2">
+                Learn <strong>Blender</strong> and <strong>Synfig Studio</strong> through 
+                <a 
+                  href="https://spoken-tutorial.org/tutorial-search/?search_foss=Synfig&search_language=English" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-medium text-blue-600 hover:underline"
+                >
+                  Spoken Tutorials
+                </a>.
+              </p>
+              <p class="text-xl text-gray-600">
+                Available in: English, Hindi, Kannada, Marathi, Malayalam, Tamil, and Telugu.
+              </p>
+            </div>
+
+            <!-- Supporting Tools -->
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="mb-2 font-semibold text-gray-900">🛠 Supporting Open-Source Tools</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>
+                  <a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">GIMP</a>
+                </li>
+                <li>
+                  <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Inkscape</a>
+                </li>
+                <li>
+                  <a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Audacity</a>
+                </li>
+                <li>
+                  <a href="https://www.openshot.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">OpenShot Video Editor</a>
+                </li>
+              </ul>
+              <p class="mt-4  text-xl text-sm text-gray-600">
+            Spoken Tutorials for these tools are also available in multiple Indian languages.
+          </p>
+            </div>
+
+            <!-- Primary Software Links -->
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="mb-2 font-semibold text-gray-900">💻 Primary Software Downloads</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>
+                  <a href="https://www.synfig.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Synfig Studio</a>
+                </li>
+                <li>
+                  <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:underline">Blender</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Additional Learning Resources -->
+            <div class="rounded-lg  p-4 border border-green-300">
+              <h3 class="mb-2 font-semibold text-gray-900">📚 Additional Learning Resources</h3>
+             <ul class="list-disc text-xl space-y-3 pl-5 text-gray-700">
+            <li>
+              Learn script writing and storytelling through
+              <a 
+                href="https://spoken-tutorial.org/tutorial-search/?search_foss=Communication+Series&search_language=English" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="font-medium text-blue-600 hover:underline"
+              >
+                        Communication Spoken Tutorials          
+                 </a>
+            </li>
+            <li>
+              Explore graphics and creative assets from the
+              <a 
+                href="https://www.focal.fossee.in/"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="font-medium text-blue-600 hover:underline"
+              >
+              FOCAL (Free and Open Source Creative Art Library)
+                 </a>
+              repository.
+            </li>
+          </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Main>
+
+<!-- Custom Styling & Tab Switching Script -->
+<style>
+  .active-tab {
+    background-color: #800000ff;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .inactive-tab {
+    background-color: #f3f4f6;
+    color: #374151;
+  }
+  .inactive-tab:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const targetTab = button.getAttribute('data-tab');
+
+        // Toggle active states on buttons
+        tabButtons.forEach((btn) => {
+          btn.classList.remove('active-tab');
+          btn.classList.add('inactive-tab');
+        });
+        button.classList.add('active-tab');
+        button.classList.remove('inactive-tab');
+
+        // Toggle tab content visibility
+        tabContents.forEach((content) => {
+          if (content.id === targetTab) {
+            content.classList.remove('hidden');
+            content.classList.add('block');
+          } else {
+            content.classList.add('hidden');
+            content.classList.remove('block');
+          }
+        });
+      });
+    });
+  });
+</script>
