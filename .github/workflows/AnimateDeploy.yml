@@ -24,4 +24,4 @@ jobs:
         uses: withastro/action@v3
       - name: Create folder
         run: |
-          mkdir -p /home/github/Assets/animate2025.fossee.in/prod && cp -R dist /home/github/Assets/animate2025.fossee.in/prod
+          mkdir -p /home/github/Assets/animate2026.fossee.in/prod && cp -R dist /home/github/Assets/animate2026.fossee.in/prod
