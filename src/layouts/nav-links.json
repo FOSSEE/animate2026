@@ -5,7 +5,8 @@
     { "label": "Theme", "href": "/theme" },
   { "label": "Submission", "href": "/submissions" },
   { "label": "Rules and Regulations", "href": "/rules" },
-  {"label": "Partners", "href": "/partners"},
+    { "label": "Awards", "href": "/awards" },
+  {"label": "Organisers", "href": "/partners"},
   { "label": "Contact", "href": "/contact" }
 
 ]
