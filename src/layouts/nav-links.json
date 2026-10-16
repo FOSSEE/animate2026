@@ -2,12 +2,11 @@
  
   { "label": "About", "href": "/about" },
   { "label": "Eligibility", "href": "/eligibility" },
-    { "label": "Theme", "href": "/theme" },
-        { "label": "Register", "href": "/register" },
-
+  { "label": "Theme", "href": "/theme" },
+  { "label": "Register", "href": "/register" },
   { "label": "Submission", "href": "/submissions" },
   { "label": "Rules and Regulations", "href": "/rules" },
-    { "label": "Awards", "href": "/awards" },
+  { "label": "Awards", "href": "/awards" },
   {"label": "Organisers", "href": "/partners"},
   { "label": "Contact", "href": "/contact" }
 
