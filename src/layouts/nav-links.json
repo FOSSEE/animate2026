@@ -7,7 +7,7 @@
   { "label": "Submission", "href": "/submissions" },
   { "label": "Rules and Regulations", "href": "/rules" },
   { "label": "Awards", "href": "/awards" },
-  {"label": "Organisers", "href": "/partners"},
+    { "label": "Workshop", "href": "/workshop" },
   { "label": "Contact", "href": "/contact" }
 
 ]

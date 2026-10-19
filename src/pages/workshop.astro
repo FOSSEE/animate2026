@@ -1,0 +1,97 @@
+---
+import Main from '../layouts/main.astro';
+
+const workshops = [
+  {
+    title: "1. Inkscape Workshop",
+    topic: "Creating and Modifying AI-Generated Images",
+    duration: "2 hours",
+    about: "Learn to create, edit, and refine AI-generated images using vector graphics tools in Inkscape."
+  },
+  {
+    title: "2. GIMP Workshop",
+    topic: "Creating and Modifying AI-Generated Images",
+    duration: "2 hours",
+    about: "Learn to edit, enhance, and refine AI-generated images using GIMP."
+  },
+  {
+    title: "3. Synfig Studio Workshop",
+    topic: "Creating 2D Animations Using AI-Generated Images as References",
+    duration: "2 hours",
+    about: "Learn to use AI-generated images as references for creating and animating 2D characters, objects, and scenes in Synfig Studio."
+  },
+  {
+    title: "4. Blender Workshop – 3D Animation",
+    topic: "Creating 3D Animations Using AI-Generated Images as References",
+    duration: "2 hours",
+    about: "Explore 3D modelling, scene creation, and animation using Blender and AI-generated visual references."
+  },
+  {
+    title: "5. Blender Workshop – Video Editing",
+    topic: "Combining Animation Clips, Audio, and Background Music",
+    duration: "2 hours",
+    about: "Learn to combine animation clips, synchronize audio, add background music, and export a final video using Blender's Video Sequence Editor."
+  },
+  {
+    title: "6. OpenShot Workshop – Video Editing",
+    topic: "Editing and Combining Animation Clips",
+    duration: "2 hours",
+    about: "Learn to arrange animation clips, add audio and background music, and export the final animation video using OpenShot Video Editor."
+  },
+  {
+    title: "7. Webinar – Animation Project Submission",
+    topic: "Preparing, Packaging, and Submitting Animation Projects",
+    duration: "1 hour",
+    about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible."
+  }
+];
+---
+
+<Main>
+  <section class="py-12 bg-white">
+    <div class="mx-auto max-w-4xl px-6">
+      
+      <!-- Header Section -->
+      <div class="text-center mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-[#800000ff] mb-3">ANIMATE 2026 – Workshops & Webinar</h1>
+        <p class="text-gray-700 text-base md:text-lg mb-4">
+          Join our workshops and webinar to learn how to create, animate, edit, and submit animation projects using open-source software.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6 text-lg font-medium text-gray-800 bg-[#dde9af] py-3 px-6 rounded-lg shadow-sm">
+          <p><strong>Tentative Schedule:</strong> 24 October – 10 November 2026</p>
+          <!-- <span class="hidden sm:inline"></span> -->
+          <p><strong>Target Audience:</strong> ANIMATE 2026 participants</p>
+        </div>
+      </div>
+
+      <!-- Dropdown / Accordion List of Workshops -->
+      <div class="space-y-4">
+        {
+          workshops.map((item) => (
+            <details class="group rounded-xl border border-green-300 bg-white shadow-sm transition-all duration-200 overflow-hidden">
+              <summary class="flex cursor-pointer items-center justify-between p-5 font-bold text-[#800000ff] text-lg hover:bg-gray-50 select-none">
+                <span>{item.title}</span>
+                <span class="transition-transform duration-200 group-open:rotate-180 text-[#800000ff]">
+                  <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="px-5 pb-5 pt-2 text-gray-700 space-y-2 border-t border-gray-100 bg-gray-50/50">
+                <p><strong>Topic:</strong> {item.topic}</p>
+                <p><strong>Duration:</strong> {item.duration}</p>
+                <p><strong>About:</strong> {item.about}</p>
+              </div>
+            </details>
+          ))
+        }
+      </div>
+
+      <!-- Note Section -->
+      <div class="mt-8 text-center text-lg text-gray-600 italic bg-[#dde9af] p-4 rounded-lg border border-gray-200">
+        <p class="text-xl"><strong class="text-red-600 text-xl">Note:</strong> Workshop and webinar dates, registration details, and joining links will be announced on this page.</p>
+      </div>
+
+    </div>
+  </section>
+</Main>
