@@ -1,106 +1,125 @@
 ---
+
 import Main from '../layouts/main.astro';
 import focal from '../images/focal.png';
 import nmeict from '../images/nmeict-logo.png';
-import  fos from '../images/fossee-logo.png';
+import fos from '../images/fossee-logo.png';
 import iit from '../images/IITB-logo.png';
+import wwi from '../images/WWI-logo.png';
 ---
 
 <Main>
   <!-- Added pb-28 here to create space between content and the fixed footer -->
   <div class="pb-28">
-    <section id="partner" class="bg-white py-12">
-      <div class="mx-auto max-w-6xl px-6">
-        
-        <!-- Knowledge Partner Heading -->
-         <div class="mb-6 text-center">
-           <h2 class="text-3xl font-bold text-[#800000ff] sm:text-3xl">
-             Organisers
-          </h2>
-        </div>
+<section id="partner" class="bg-white py-12">
+  <div class="mx-auto max-w-6xl px-6">
 
-        <!-- All 4 Partners in One Horizontal Line (grid-cols-4) -->
-        <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
-          
-          <!-- IIT Bombay -->
-          <div class="flex flex-col rounded-xl border border-green-300 bg-white p-6 text-center shadow-sm">
-            <div class="my-auto flex items-center justify-center">
-              <a
-                href="https://www.iitb.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition-transform duration-200 hover:scale-105"
-              >
-                <img
-                  src={iit.src}
-                  alt="IIT Bombay"
-                  decoding="async"
-                  class="max-h-15 w-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
+    <!-- Organisers Heading -->
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl font-bold text-[#800000ff]">
+        Organisers
+      </h2>
+    </div>
 
-          <!-- FOSSEE -->
-          <div class="flex flex-col rounded-xl border border-green-300 bg-white p-6 text-center shadow-sm">
-            <div class="my-auto flex items-center justify-center">
-              <a
-                href="https://fossee.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition-transform duration-200 hover:scale-105"
-              >
-                <img
-                  src={fos.src}
-                  alt="FOSSEE"
-                  decoding="async"
-                  class="max-h-15 w-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
+    <!-- First Row: IIT Bombay, FOSSEE, NMEICT -->
+    <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-3">
 
-          <!-- NMEICT -->
-          <div class="flex flex-col rounded-xl border border-green-300 bg-white p-6 text-center shadow-sm">
-            <div class="my-auto flex items-center justify-center">
-              <a
-                href="https://nmeict.ac.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition-transform duration-200 hover:scale-105"
-              >
-                <img
-                  src={nmeict.src}
-                  alt="NMEICT"
-                  decoding="async"
-                  class="max-h-15 w-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
-
-          <!-- FOCAL Resource Partner -->
-          <div class="flex flex-col rounded-xl border border-green-300 bg-white p-6 text-center shadow-sm">
-            <div class="my-auto flex items-center justify-center">
-              <a
-                href="https://focal.fossee.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition-transform duration-200 hover:scale-105"
-              >
-                <img
-                  src={focal.src}
-                  alt="FOCAL Resource Partner"
-                  decoding="async"
-                  class="max-h-15 w-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
-
-        </div>        
+      <!-- IIT Bombay -->
+      <div class="flex items-center justify-center rounded-xl border border-green-300 bg-white p-6 shadow-sm">
+        <a
+          href="https://www.iitb.ac.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-transform duration-200 hover:scale-105"
+        >
+          <img
+            src={iit.src}
+            alt="IIT Bombay"
+            decoding="async"
+            class="h-20 w-full object-contain"
+          />
+        </a>
       </div>
-    </section>
+
+      <!-- FOSSEE -->
+      <div class="flex items-center justify-center rounded-xl border border-green-300 bg-white p-6 shadow-sm">
+        <a
+          href="https://fossee.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-transform duration-200 hover:scale-105"
+        >
+          <img
+            src={fos.src}
+            alt="FOSSEE"
+            decoding="async"
+            class="h-20 w-full object-contain"
+          />
+        </a>
+      </div>
+
+    <!-- WWI Execution Partner -->
+<div class="flex flex-col items-center justify-center rounded-xl border border-green-300 bg-white p-6 shadow-sm">
+  <h3 class="mb-4 text-center text-xl  text-[#800000ff]">
+    Execution Partner
+  </h3>
+
+  <a
+    href="https://www.whistlingwoods.net/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="transition-transform duration-200 hover:scale-105"
+  >
+    <img
+      src={wwi.src}
+      alt="WWI"
+      decoding="async"
+      class="h-20 w-full object-contain"
+    />
+  </a>
+</div>
+<!-- NMEICT -->
+<div class="flex flex-col items-center justify-center rounded-xl border border-green-300 bg-white p-6 shadow-sm">
+  <a
+    href="https://nmeict.ac.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="transition-transform duration-200 hover:scale-105"
+  >
+    <img
+      src={nmeict.src}
+      alt="NMEICT"
+      decoding="async"
+      class="h-20 w-full object-contain"
+    />
+  </a>
+</div>
+
+      <!-- FOCAL Resource Partner -->
+      <div class="flex items-center justify-center rounded-xl border border-green-300 bg-white p-6 shadow-sm">
+         
+        <a
+          href="https://focal.fossee.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-transform duration-200 hover:scale-105"
+        >
+        <div class="flex items-center justify-center">
+    <h1 class="text-xl text-center text-[#800000ff]">Resource Partner</h1>
+  </div>
+          <img
+            src={focal.src}
+            alt="FOCAL Resource Partner"
+            decoding="async"
+            class="h-20 w-full object-contain"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+</section>
 
     <section id="faq">
       <div class="py-6">
