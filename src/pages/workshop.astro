@@ -12,8 +12,9 @@ const workshops = [
   {
     title: "2. GIMP Workshop",
     topic: "Creating and Modifying AI-Generated Images",
-    duration: "2 hours",
-    about: "Learn to edit, enhance, and refine AI-generated images using GIMP."
+    dateandtime:"07 Nov 2026. 11:00 AM to 1:00 PM",
+    about: "Learn to edit, enhance, and refine AI-generated images using GIMP.",
+    youtubelink: "https://www.youtube.com/live/mUW4z1RW0L4"
   },
   {
     title: "3. Synfig Studio Workshop",
@@ -113,11 +114,11 @@ const workshops = [
 
               <p><strong>Topic:</strong> {item.topic}</p>
 
-              {index === 0 && item.dateandtime && (
+              {index <= 1 && item.dateandtime && (
                 <p><strong>Date & Time:</strong> {item.dateandtime}</p>
               )}
 
-              {index !== 0 && item.duration && (
+              {index <= 1 && item.duration && (
                 <p><strong>Duration:</strong> {item.duration}</p>
               )}
 
