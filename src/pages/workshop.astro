@@ -14,7 +14,7 @@ const workshops = [
     topic: "Creating and Modifying AI-Generated Images",
     dateandtime:"07 Nov 2026. 11:00 AM to 1:00 PM",
     about: "Learn to edit, enhance, and refine AI-generated images using GIMP.",
-    youtubelink: "https://www.youtube.com/live/mUW4z1RW0L4"
+    Note:" Recorded session will be available very soon.",
   },
   {
     title: "3. Synfig Studio Workshop",
@@ -123,7 +123,13 @@ const workshops = [
               )}
 
               <p><strong>About:</strong> {item.about}</p>
-
+        {item.Note && (
+             <div class="mt-4 rounded-lg border border-green-300 bg-[#dde9af] p-4">
+           <p class="text-base font-medium text-yellow-800">
+            <strong>Note:</strong> {item.Note}
+           </p>
+         </div>
+        )}
               {item.youtubelink && (
                 <div class="pt-3">
                   <a
