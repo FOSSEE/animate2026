@@ -19,8 +19,10 @@ const workshops = [
   {
     title: "3. Synfig Studio Workshop",
     topic: "Creating 2D Animations Using AI-Generated Images as References",
-    duration: "2 hours",
-    about: "Learn to use AI-generated images as references for creating and animating 2D characters, objects, and scenes in Synfig Studio."
+    dateandtime: "13 Nov 2026. 11:00 AM to 1:00 PM",
+    about: "Learn to use AI-generated images as references for creating and animating 2D characters, objects, and scenes in Synfig Studio.",
+    googlemeetinglink: "https://meet.google.com/ffw-oxou-btp",
+    Youtubelivelink: " https://www.youtube.com/live/eCqf8PqkPm8?si=k8LJzOw8Gluv5z5t"
   },
   {
     title: "4. Blender Workshop - 3D Animation",
@@ -114,8 +116,8 @@ const workshops = [
 
               <p><strong>Topic:</strong> {item.topic}</p>
 
-              {index <= 1 && item.dateandtime && (
-                <p><strong>Date & Time:</strong> {item.dateandtime}</p>
+            {item.dateandtime && (
+                  <p><strong>Date & Time:</strong> {item.dateandtime}</p>
               )}
 
               {index <= 1 && item.duration && (
@@ -129,6 +131,7 @@ const workshops = [
             <strong>Note:</strong> {item.Note}
            </p>
          </div>
+         
         )}
               {item.youtubelink && (
                 <div class="pt-3">
@@ -142,7 +145,33 @@ const workshops = [
                   </a>
                 </div>
               )}
+{/* Google Meet Link */}
+{item.googlemeetinglink && (
+  <div class="pt-3">
+    <a
+      href={item.googlemeetinglink.trim()}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
+    >
+      Join via Google Meet
+    </a>
+  </div>
+)}
 
+{/* YouTube Live Link */}
+{item.Youtubelivelink && (
+  <div class="pt-3">
+    <a
+      href={item.Youtubelivelink.trim()}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block rounded-lg bg-[#800000] px-6 py-3 font-semibold text-white transition hover:bg-[#600000]"
+    >
+      Watch Live on YouTube
+    </a>
+  </div>
+)}
             </div>
           </details>
         ))}
