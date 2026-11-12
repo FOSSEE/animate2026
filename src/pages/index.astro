@@ -8,119 +8,90 @@ import iit from '../images/IITB-logo.png';
 ---
 
 <Main>
-<div class="lg:hidden sm:block rounded-t-lg mx-1 px-1" style="background:#ddea9afff;">
-      <!-- <nav> --> 
-    <div class="flex flex-row align-items-center justify-center bottom-8" style="background-color:#ddea9afff" data-astro-cid-mmggtga4="">
-    <div class="flex items-start justify-start float-start w-1/2" data-astro-cid-mmggtga4="">
-    <a href="https://www.iitb.ac.in/" target="_blank">
-    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4="" style="width: 100px;">
-    </a>
+  <div class="lg:hidden sm:block rounded-t-lg mx-1 px-1" style="background:#ddea9afff;">
+    <!-- Logos Navigation -->
+    <div class="flex flex-row align-items-center justify-center bottom-8" style="background-color:#ddea9afff">
+      <div class="flex items-start justify-start float-start w-1/2">
+        <a href="https://www.iitb.ac.in/" target="_blank">
+          <img src={iit.src} alt="iitb" decoding="async" style="width: 100px;">
+        </a>
+      </div>
+      <div class="flex justify-end items-end float-end w-1/2">
+        <a href="https://fossee.in" target="_blank">
+          <img class="float-end" src={fos.src} alt="fossee" decoding="async" style="width: 100px;">
+        </a>
+      </div>
     </div>
-    <div class="flex justify-end items-end float-end w-1/2" data-astro-cid-mmggtga4="">
-    <a href="https://fossee.in" target="_blank">
-    <img class="float-end" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" style="width: 100px;">
-    </a>
-    </div>
-    </div>
-        <div class="grid my-auto grid-rows-1 sm:grid-rows-1">
-          <div class="row-span-1"><div class="pt-5 flex items-center justify-center">
-        
-            <img  src={logo.src} alt="regi" decoding="async" />
-          </div></div>
-         
-         
+
+    <div class="grid my-auto grid-rows-1 sm:grid-rows-1">
+      <div class="row-span-1">
+        <div class="pt-5 flex items-center justify-center">
+          <img src={logo.src} alt="regi" decoding="async" />
         </div>
-               
-<!-- Call To Action -->
-<!-- Call To Action -->
-<!-- <div class="mt-6 flex justify-center">
-  <a 
-    href="/register" 
-    class="inline-block rounded-md bg-[#38a169] px-8 py-2.5 text-xl font-bold text-white shadow-md transition-all duration-200 select-none touch-manipulation focus:outline-none [-webkit-tap-highlight-color:transparent] active:scale-95 active:bg-[#2f855a] sm:hover:scale-105 sm:hover:bg-[#2f855a]"
-  >
-    Register
-  </a>
-</div> -->
-
-<div class="mt-6 flex w-full flex-col items-center justify-center gap-3 px-4 sm:flex-row sm:gap-4">
-
-
-<!-- Register Button -->
-
-<a
-
-href="/register"
-
-class="inline-flex w-full max-w-xs items-center justify-center rounded-md bg-[#38a169] px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#2f855a] active:scale-95 sm:w-auto sm:px-8 sm:py-2.5 sm:text-lg lg:text-xl"
-
->
-
-Register
-
-</a>
-
-
-<!-- FAQ Button -->
-
-<a
-
-href="https://docs.google.com/document/u/0/d/e/2PACX-1vR66m-aiPtDOeEOruyiIeKlf3198cuNr6tBpHwqjlouzN5wAQmn6LN8CzD1A-5cDbE4IFrwfkrywsIa/pub?pli=1"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
-class="inline-flex w-full max-w-xs items-center justify-center rounded-md bg-[#38a169] px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#2f855a] active:scale-95 sm:w-auto sm:px-8 sm:py-2.5 sm:text-lg lg:text-xl"
-
->
-
-FAQ
-
-</a>
-
-
-</div>
-<style>
-  .custom-register-btn {
-    display: inline-block;
-    border-radius: 0.375rem; /* rounded-md */
-    background-color: #38a169;
-    padding: 0.625rem 2rem; /* px-8 py-2.5 */
-    font-size: 1.25rem; /* text-xl */
-    font-weight: 700; /* font-bold */
-    color: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.2s ease-in-out;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent; /* Removes default grey tap overlay on mobile */
-    user-select: none;
-  }
-
-  /* Desktop hover state (only triggers on devices with an actual mouse cursor) */
-  @media (hover: hover) {
-    .custom-register-btn:hover {
-      background-color: #2f855a;
-      transform: scale(1.05);
-    }
-  }
-
-  /* Mobile tap/touch active state */
-  .custom-register-btn:active {
-    background-color: #2f855a;
-    transform: scale(0.95);
-  }
-</style>
-<div class="row-span-1 bg-red-500"> <div class="dates items-center" style="color:#0fe425"> 
-          <!-- <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Registrations are closed -</strong></p>
-                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Last date of submission -</strong></p>
-                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl"> 23 June 2024</p>                 -->
-        </div></div>
-      <!-- </nav> -->
+      </div>
     </div>
-    <!-- Hero image -->
-<!-- Hero image -->
+         
+
+    
+    <!-- Call To Action Buttons -->
+    <div class="mt-6 flex w-full flex-col items-center justify-center gap-3 px-4 sm:flex-row sm:gap-4">
+      <!-- Register Button -->
+      <a
+        href="/register"
+        class="inline-flex w-full max-w-xs items-center justify-center rounded-md bg-[#38a169] px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#2f855a] active:scale-95 sm:w-auto sm:px-8 sm:py-2.5 sm:text-lg lg:text-xl"
+      >
+        Register
+      </a>
+
+      <!-- FAQ Button -->
+      <a
+        href="https://docs.google.com/document/u/0/d/e/2PACX-1vR66m-aiPtDOeEOruyiIeKlf3198cuNr6tBpHwqjlouzN5wAQmn6LN8CzD1A-5cDbE4IFrwfkrywsIa/pub?pli=1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex w-full max-w-xs items-center justify-center rounded-md bg-[#38a169] px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:scale-105 hover:bg-[#2f855a] active:scale-95 sm:w-auto sm:px-8 sm:py-2.5 sm:text-lg lg:text-xl"
+      >
+        FAQ
+      </a>
+    </div>
+
+    <div class="row-span-1 bg-red-500 mt-4"> 
+      <div class="dates items-center" style="color:#0fe425"> 
+        <!-- Optional date notice content can go here -->
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .custom-register-btn {
+      display: inline-block;
+      border-radius: 0.375rem;
+      background-color: #38a169;
+      padding: 0.625rem 2rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      transition: all 0.2s ease-in-out;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    @media (hover: hover) {
+      .custom-register-btn:hover {
+        background-color: #2f855a;
+        transform: scale(1.05);
+      }
+    }
+
+    .custom-register-btn:active {
+      background-color: #2f855a;
+      transform: scale(0.95);
+    }
+  </style>
+
+  <!-- Hero Section -->
   <section id="hero" class="relative w-full">
-    <!-- Image -->
     <img 
       class="w-full object-cover p-2" 
       src={Hero.src} 
@@ -128,7 +99,6 @@ FAQ
       decoding="async" 
     />
 
-    <!-- Text Patch Centered at Bottom of Hero -->
     <div
       class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2
              w-[85%] max-w-[700px]
@@ -149,6 +119,4 @@ FAQ
       </p>
     </div>
   </section>
-
-   
 </Main>
