@@ -6,29 +6,32 @@ const workshops = [
     title: "1. Inkscape Workshop",
     topic: "Creating and Modifying AI-Generated Images",
     about: "Learn to create, edit, and refine AI-generated images using vector graphics tools in Inkscape.",
-    dateandtime: "31 Oct 2026. 11:00 AM to 1:00 PM",
-    youtubelink: "https://www.youtube.com/live/mUW4z1RW0L4"
+    dateandtime: "31 Oct 2026, 11:00 AM to 1:00 PM",
+    youtubeLink: "https://www.youtube.com/live/mUW4z1RW0L4",
+    youtubeLabel: "Watch Inkscape workshop recording"
   },
   {
     title: "2. GIMP Workshop",
     topic: "Creating and Modifying AI-Generated Images",
-    dateandtime:"07 Nov 2026. 11:00 AM to 1:00 PM",
+    dateandtime: "07 Nov 2026, 11:00 AM to 1:00 PM",
     about: "Learn to edit, enhance, and refine AI-generated images using GIMP.",
-    Note:" Recorded session will be available very soon.",
+    note: "Recorded session will be available very soon."
   },
   {
     title: "3. Synfig Studio Workshop",
     topic: "Creating 2D Animations Using AI-Generated Images as References",
-    dateandtime: "13 Nov 2026. 11:00 AM to 1:00 PM",
+    dateandtime: "13 Nov 2026, 11:00 AM to 1:00 PM",
     about: "Learn to use AI-generated images as references for creating and animating 2D characters, objects, and scenes in Synfig Studio.",
-    googlemeetinglink: "https://meet.google.com/ffw-oxou-btp",
-    Youtubelivelink: " https://www.youtube.com/live/eCqf8PqkPm8?si=k8LJzOw8Gluv5z5t"
+    youtubeLink: "https://www.youtube.com/live/eCqf8PqkPm8?si=k8LJzOw8Gluv5z5t",
+    youtubeLabel: "watch synfig studio workshop recordings"
   },
   {
     title: "4. Blender Workshop - 3D Animation",
     topic: "Creating 3D Animations Using AI-Generated Images as References",
-    duration: "2 hours",
-    about: "Explore 3D modelling, scene creation, and animation using Blender and AI-generated visual references."
+    dateandtime: "14 Nov 2026, 11:00 AM to 1:00 PM",
+    about: "Explore 3D modelling, scene creation, and animation using Blender and AI-generated visual references.",
+    googleMeetingLink: "https://meet.google.com/bsg-mtij-bxw",
+    youtubeLiveLink: "https://www.youtube.com/live/FtM_-HAwRRw"
   },
   {
     title: "5. Blender Workshop - Video Editing",
@@ -55,7 +58,6 @@ const workshops = [
   <section class="bg-white py-12">
     <div class="mx-auto max-w-4xl px-6">
 
-      <!-- Registration Button -->
       <div class="mt-6 mb-5 flex justify-center">
         <a
           href="https://docs.google.com/forms/d/1ctxQZiO_yyxO06pgiyMw7IyL-ydzlpM2KrLoIR3lHpU/viewform?edit_requested=true"
@@ -67,7 +69,6 @@ const workshops = [
         </a>
       </div>
 
-      <!-- Header Section -->
       <div class="mb-10 text-center">
         <h1 class="mb-3 text-3xl font-bold text-[#800000] md:text-4xl">
           ANIMATE 2026 - Workshops & Webinar
@@ -82,21 +83,17 @@ const workshops = [
           <p>
             <strong>Tentative Schedule:</strong> 24 October - 25 November 2026
           </p>
-
           <p>
             <strong>Target Audience:</strong> ANIMATE 2026 participants
           </p>
         </div>
       </div>
 
-      <!-- Workshops Accordion -->
       <div class="space-y-4">
-        {workshops.map((item, index) => (
+        {workshops.map((item) => (
           <details class="group overflow-hidden rounded-xl border border-green-300 bg-white shadow-sm">
-
             <summary class="flex cursor-pointer select-none items-center justify-between p-5 text-lg font-bold text-[#800000] hover:bg-gray-50">
               <span>{item.title}</span>
-
               <svg
                 class="h-5 w-5 transition-transform duration-200 group-open:rotate-180"
                 fill="none"
@@ -113,71 +110,73 @@ const workshops = [
             </summary>
 
             <div class="space-y-3 border-t border-gray-100 bg-gray-50/50 px-5 pb-5 pt-4 text-gray-700">
-
               <p><strong>Topic:</strong> {item.topic}</p>
 
-            {item.dateandtime && (
-                  <p><strong>Date & Time:</strong> {item.dateandtime}</p>
+              {item.dateandtime && (
+                <p><strong>Date & Time:</strong> {item.dateandtime}</p>
               )}
 
-              {index <= 1 && item.duration && (
+              {item.duration && (
                 <p><strong>Duration:</strong> {item.duration}</p>
               )}
 
               <p><strong>About:</strong> {item.about}</p>
-        {item.Note && (
-             <div class="mt-4 rounded-lg border border-green-300 bg-[#dde9af] p-4">
-           <p class="text-base font-medium text-yellow-800">
-            <strong>Note:</strong> {item.Note}
-           </p>
-         </div>
-         
-        )}
-              {item.youtubelink && (
+
+              {item.note && (
+                <div class="mt-4 rounded-lg border border-green-300 bg-[#dde9af] p-4">
+                  <p class="text-base font-medium text-yellow-800">
+                    <strong>Note:</strong> {item.note}
+                  </p>
+                </div>
+              )}
+
+              {/* YouTube Recording Link */}
+              {item.youtubeLink && (
                 <div class="pt-3">
                   <a
-                    href={item.youtubelink}
+                    href={item.youtubeLink.trim()}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-block rounded-lg bg-[#800000] px-6 py-3 font-semibold text-white transition hover:bg-[#600000]"
                   >
-                    Watch Inkspace Workshop Recording
+                    {item.youtubeLabel || "Watch Workshop Recording"}
                   </a>
                 </div>
               )}
-{/* Google Meet Link
-{item.googlemeetinglink && (
-  <div class="pt-3">
-    <a
-      href={item.googlemeetinglink.trim()}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-block rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
-    >
-      Join via Google Meet
-    </a>
-  </div>
-)} */}
 
-{/* YouTube Live Link */}
-{item.Youtubelivelink && (
-  <div class="pt-3">
-    <a
-      href={item.Youtubelivelink.trim()}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-block rounded-lg bg-[#800000] px-6 py-3 font-semibold text-white transition hover:bg-[#600000]"
-    >
-      Watch Synfig Studio Workshop Recording
-    </a>
-  </div>
-)}
+              {/* Google Meet Link */}
+              {item.googleMeetingLink && (
+                <div class="pt-3">
+                  <a
+                    href={item.googleMeetingLink.trim()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
+                  >
+                    Join via Google Meet
+                  </a>
+                </div>
+              )}
+
+              {/* YouTube Live Link */}
+              {item.youtubeLiveLink && (
+                <div class="pt-3">
+                  <a
+                    href={item.youtubeLiveLink.trim()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block rounded-lg bg-[#800000] px-6 py-3 font-semibold text-white transition hover:bg-[#600000]"
+                  >
+                    Watch on YouTube Live
+                  </a>
+                </div>
+              )}
+
             </div>
           </details>
         ))}
       </div>
 
-      <!-- Note Section -->
       <div class="mt-8 rounded-lg border border-gray-200 bg-[#dde9af] p-4 text-center text-lg italic text-gray-600">
         <p class="text-xl">
           <strong class="text-xl text-red-600">Note:</strong>
