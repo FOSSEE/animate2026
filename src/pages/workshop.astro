@@ -18,12 +18,16 @@ const workshops = [
     note: "Recorded session will be available very soon."
   },
   {
+    
     title: "3. Synfig Studio Workshop",
     topic: "Creating 2D Animations Using AI-Generated Images as References",
     dateandtime: "13 Nov 2026, 11:00 AM to 1:00 PM",
     about: "Learn to use AI-generated images as references for creating and animating 2D characters, objects, and scenes in Synfig Studio.",
     youtubeLink: "https://www.youtube.com/live/eCqf8PqkPm8?si=k8LJzOw8Gluv5z5t",
-    youtubeLabel: "watch synfig studio workshop recordings"
+    youtubeLabel: "watch synfig studio workshop recordings",
+    downloadLink: "https://youtu.be/PX0YcA0nn1U?si=6Ezf9BhO3ad0M69O",
+    downloadLabel: "Download and Install Synfig Studio"
+
   },
   {
     title: "4. Blender Workshop - 3D Animation",
@@ -144,6 +148,20 @@ const workshops = [
                 </div>
               )}
 
+              
+              {/* Download / Install Link */}
+              {item.downloadLink && (
+                <div class="pt-3">
+                  <a
+                    href={item.downloadLink.trim()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
+                  >
+                    {item.downloadLabel || "Download & Install"}
+                  </a>
+                </div>
+              )}
               {/* Google Meet Link */}
               {item.googleMeetingLink && (
                 <div class="pt-3">
