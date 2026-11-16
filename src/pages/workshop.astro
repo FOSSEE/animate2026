@@ -18,7 +18,6 @@ const workshops = [
     note: "Recorded session will be available very soon."
   },
   {
-    
     title: "3. Synfig Studio Workshop",
     topic: "Creating 2D Animations Using AI-Generated Images as References",
     dateandtime: "13 Nov 2026, 11:00 AM to 1:00 PM",
@@ -27,7 +26,6 @@ const workshops = [
     youtubeLabel: "watch synfig studio workshop recordings",
     downloadLink: "https://youtu.be/PX0YcA0nn1U?si=6Ezf9BhO3ad0M69O",
     downloadLabel: "Download and Install Synfig Studio"
-
   },
   {
     title: "4. Blender Workshop - 3D Animation",
@@ -36,19 +34,24 @@ const workshops = [
     about: "Explore 3D modelling, scene creation, and animation using Blender and AI-generated visual references.",
     youtubeLink: "https://www.youtube.com/live/FtM_-HAwRRw",
     youtubeLabel: "Watch Blender workshop recording"
-
   },
   {
     title: "5. Blender Workshop - Video Editing",
     topic: "Combining Animation Clips, Audio, and Background Music",
-    duration: "2 hours",
-    about: "Learn to combine animation clips, synchronize audio, add background music, and export a final video using Blender's Video Sequence Editor."
+    dateandtime: "20 Nov 2026 Friday, from 11:00 AM to 1:00 PM",
+    about: "Learn to combine animation clips, synchronize audio, add background music, and export a final video using Blender's Video Sequence Editor.",
+    googleMeetingLink: "https://meet.google.com/vxp-nqou-aen",
+    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
+    youtubeLiveLink: "https://youtube.com/live/ypj9DDj4unU?feature=share",
   },
   {
     title: "6. OpenShot Workshop - Video Editing",
     topic: "Editing and Combining Animation Clips",
-    duration: "2 hours",
-    about: "Learn to arrange animation clips, add audio and background music, and export the final animation video using OpenShot Video Editor."
+    dateandtime: "21 Nov 2026 Saturday, from 11:00 AM to 1:00 PM",
+    about: "Learn to arrange animation clips, add audio and background music, and export the final animation video using OpenShot Video Editor.",
+    googleMeetingLink: "https://meet.google.com/rtc-qptz-jwx",
+    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
+    youtubeLiveLink: "https://youtube.com/live/G-5K2Cm-i5s?feature=share"
   },
   {
     title: "7. Webinar - Animation Project Submission",
@@ -148,7 +151,6 @@ const workshops = [
                   </a>
                 </div>
               )}
-
               
               {/* Download / Install Link */}
               {item.downloadLink && (
@@ -163,22 +165,26 @@ const workshops = [
                   </a>
                 </div>
               )}
-              {/* Google Meet Link */}
-              {/* {item.googleMeetingLink && (
+
+              {/* Google Meet Link with Seats Info */}
+              {item.googleMeetingLink && (
                 <div class="pt-3">
                   <a
                     href={item.googleMeetingLink.trim()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-block rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
+                    class="inline-flex flex-col sm:flex-row sm:items-center gap-1 rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
                   >
-                    Join via Google Meet
+                    <span>Join via Google Meet</span>
+                    <span class="text-xs font-normal bg-white/20 px-2 py-0.5 rounded-full text-white">
+                      (Limited Seats Available)
+                    </span>
                   </a>
                 </div>
-              )} */}
+              )}
 
               {/* YouTube Live Link */}
-              {/* {item.youtubeLiveLink && (
+              {item.youtubeLiveLink && (
                 <div class="pt-3">
                   <a
                     href={item.youtubeLiveLink.trim()}
@@ -189,7 +195,7 @@ const workshops = [
                     Watch on YouTube Live
                   </a>
                 </div>
-              )} */}
+              )}
 
             </div>
           </details>
