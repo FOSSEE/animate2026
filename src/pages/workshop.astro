@@ -40,8 +40,6 @@ const workshops = [
     topic: "Combining Animation Clips, Audio, and Background Music",
     dateandtime: "20 Nov 2026 Friday, from 11:00 AM to 1:00 PM",
     about: "Learn to combine animation clips, synchronize audio, add background music, and export a final video using Blender's Video Sequence Editor.",
-    googleMeetingLink: "https://meet.google.com/vxp-nqou-aen",
-    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
     youtubeLiveLink: "https://youtube.com/live/ypj9DDj4unU?feature=share",
   },
   {
@@ -49,15 +47,16 @@ const workshops = [
     topic: "Editing and Combining Animation Clips",
     dateandtime: "21 Nov 2026 Saturday, from 11:00 AM to 1:00 PM",
     about: "Learn to arrange animation clips, add audio and background music, and export the final animation video using OpenShot Video Editor.",
-    googleMeetingLink: "https://meet.google.com/rtc-qptz-jwx",
-    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
     youtubeLiveLink: "https://youtube.com/live/G-5K2Cm-i5s?feature=share"
   },
   {
     title: "7. Webinar - Animation Project Submission",
     topic: "Preparing, Packaging, and Submitting Animation Projects",
-    duration: "1 hour",
-    about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible."
+    dateandtime: "24 Nov 2026 Tuesday, from 6:00 PM to 7:00 PM",
+    about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible.",
+    googleMeetingLink: "https://meet.google.com/rtc-qptz-jwx",
+    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
+    youtubeLiveLink: "https://www.youtube.com/live/AviiNXO1ipQ"
   }
 ];
 ---
@@ -122,10 +121,6 @@ const workshops = [
 
               {item.dateandtime && (
                 <p><strong>Date & Time:</strong> {item.dateandtime}</p>
-              )}
-
-              {item.duration && (
-                <p><strong>Duration:</strong> {item.duration}</p>
               )}
 
               <p><strong>About:</strong> {item.about}</p>
