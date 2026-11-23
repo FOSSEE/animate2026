@@ -56,8 +56,11 @@ const workshops = [
   {
     title: "7. Webinar - Animation Project Submission",
     topic: "Preparing, Packaging, and Submitting Animation Projects",
-    duration: "1 hour",
-    about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible."
+    dateandtime: "24 Nov 2026 Tuesday, from 6:00 PM to 7:00 PM",
+    about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible.",
+    googleMeetingLink: "https://meet.google.com/rtc-qptz-jwx",
+    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
+    youtubeLiveLink: "https://www.youtube.com/live/AviiNXO1ipQ"
   }
 ];
 ---
@@ -122,10 +125,6 @@ const workshops = [
 
               {item.dateandtime && (
                 <p><strong>Date & Time:</strong> {item.dateandtime}</p>
-              )}
-
-              {item.duration && (
-                <p><strong>Duration:</strong> {item.duration}</p>
               )}
 
               <p><strong>About:</strong> {item.about}</p>
