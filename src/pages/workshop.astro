@@ -56,8 +56,6 @@ const workshops = [
     topic: "Preparing, Packaging, and Submitting Animation Projects",
     dateandtime: "24 Nov 2026 Tuesday, from 6:00 PM to 7:00 PM",
     about: "Learn to organise project files and assets, create a ZIP package, submit it through the official ANIMATE 2026 submission form, and verify that all required files are included and accessible.",
-    googleMeetingLink: "https://meet.google.com/rtc-qptz-jwx",
-    googleMeetingSeatsText: "Join via Google Meet (Limited Seats Available)",
     youtubeLiveLink: "https://www.youtube.com/live/AviiNXO1ipQ"
   }
 ];
@@ -67,34 +65,20 @@ const workshops = [
   <section class="bg-white py-12">
     <div class="mx-auto max-w-4xl px-6">
 
-      <div class="mt-6 mb-5 flex justify-center">
-        <a
-          href="https://docs.google.com/forms/d/1ctxQZiO_yyxO06pgiyMw7IyL-ydzlpM2KrLoIR3lHpU/viewform?edit_requested=true"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="custom-register-btn"
-        >
-          Register for Workshops
-        </a>
-      </div>
-
       <div class="mb-10 text-center">
         <h1 class="mb-3 text-3xl font-bold text-[#800000] md:text-4xl">
           ANIMATE 2026 - Workshops & Webinar
         </h1>
 
-        <p class="mb-4 text-base text-gray-700 md:text-lg">
-          Join our workshops and webinar to learn how to create, animate,
-          edit, and submit animation projects using open-source software.
-        </p>
-
-        <div class="flex flex-col justify-center gap-2 rounded-lg bg-[#dde9af] px-6 py-3 text-lg font-medium text-gray-800 shadow-sm sm:flex-row sm:gap-6">
+        <div class="space-y-3 rounded-lg bg-[#dde9af] px-6 py-4 text-gray-800 shadow-sm">
+          <h2 class="text-xl font-bold">Workshops Completed - Recordings Available</h2>
           <p>
-            <strong>Tentative Schedule:</strong> 24 October - 25 November 2026
+            All live workshops for ANIMATE 2026 have been successfully completed.
           </p>
           <p>
-            <strong>Target Audience:</strong> ANIMATE 2026 participants
+            Don't worry if you missed any session! You can watch the recorded workshop videos at your convenience and continue learning at your own pace.
           </p>
+          <p><strong>Best wishes for your animation project and ANIMATE 2026 participation!</strong></p>
         </div>
       </div>
 
@@ -155,23 +139,6 @@ const workshops = [
                 </div>
               )}
 
-              {/* Google Meet Link with Seats Info */}
-              {item.googleMeetingLink && (
-                <div class="pt-3">
-                  <a
-                    href={item.googleMeetingLink.trim()}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex flex-col sm:flex-row sm:items-center gap-1 rounded-lg bg-[#38a169] px-6 py-3 font-semibold text-white transition hover:bg-[#2f855a]"
-                  >
-                    <span>Join via Google Meet</span>
-                    <span class="text-xs font-normal bg-white/20 px-2 py-0.5 rounded-full text-white">
-                      (Limited Seats Available)
-                    </span>
-                  </a>
-                </div>
-              )}
-
               {/* YouTube Live Link */}
               {item.youtubeLiveLink && (
                 <div class="pt-3">
@@ -191,13 +158,13 @@ const workshops = [
         ))}
       </div>
 
-      <div class="mt-8 rounded-lg border border-gray-200 bg-[#dde9af] p-4 text-center text-lg italic text-gray-600">
+      <!-- <div class="mt-8 rounded-lg border border-gray-200 bg-[#dde9af] p-4 text-center text-lg italic text-gray-600">
         <p class="text-xl">
           <strong class="text-xl text-red-600">Note:</strong>
           Workshop and webinar dates, registration details, and joining links
           will be announced on this page.
         </p>
-      </div>
+      </div> -->
 
     </div>
   </section>
